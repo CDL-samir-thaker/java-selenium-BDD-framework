@@ -8,9 +8,10 @@ import org.junit.runner.RunWith;
         features = {"src/main/java/BDD"},
         glue={"stepdefinition"},
         plugin = {
-                "pretty","json:target/Cucumber.json",
-                "html:target/cucumber-html-report"
-        },
+                "pretty",
+                "json:target/cucumber-report/cucumber.json",
+                "html:target/cucumber-report/cucumber.html"},
+        monochrome = true,
         dryRun = false,
         tags = "@smoke"
 
